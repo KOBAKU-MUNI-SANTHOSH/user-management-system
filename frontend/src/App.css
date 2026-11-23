@@ -1,0 +1,367 @@
+/* =====================================================
+   GLOBAL RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+/* =====================================================
+   LIGHT MODE
+===================================================== */
+
+:root {
+    color-scheme: light;
+
+    /* Backgrounds */
+    --bg-primary: #f3f6f6;
+    --bg-secondary: #eef3f2;
+    --bg-card: #fbfcfc;
+
+    /* Text */
+    --text-primary: #293333;
+    --text-secondary: #626e6e;
+    --text-muted: #8a9494;
+
+    /* Navbar */
+    --navbar-bg: #fbfcfc;
+
+    /* Inputs */
+    --input-bg: #f8fafa;
+    --input-text: #303a3a;
+    --input-placeholder: #9ba3a3;
+
+    /* Borders */
+    --border-color: #dce3e2;
+
+    /* Tables */
+    --table-header: #eef3f2;
+    --table-header-text: #4c5958;
+    --table-hover: #f4f8f7;
+
+    /* =================================================
+       BRAND
+    ================================================= */
+
+    --accent: #477a78;
+    --accent-hover: #3d6c69;
+    --accent-active: #345e5b;
+
+    --accent-soft: #e8f1f0;
+    --accent-soft-hover: #deebea;
+
+    /* =================================================
+       STATUS
+    ================================================= */
+
+    --success: #63806a;
+    --success-bg: #edf4ef;
+    --success-border: #d1dfd4;
+
+    --danger: #9b5f62;
+    --danger-hover: #884f52;
+    --danger-bg: #f6eeee;
+    --danger-border: #e6d1d2;
+
+    --warning: #94754f;
+    --warning-bg: #f5f0e8;
+    --warning-border: #e5d8c7;
+
+    /* =================================================
+       SHADOWS
+    ================================================= */
+
+    --shadow:
+        0 4px 14px
+        rgba(42, 55, 55, 0.05);
+
+    --shadow-large:
+        0 10px 30px
+        rgba(42, 55, 55, 0.10);
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+
+    /* Backgrounds */
+    --bg-primary: #202727;
+    --bg-secondary: #242d2c;
+    --bg-card: #293130;
+
+    /* Text */
+    --text-primary: #e1e7e6;
+    --text-secondary: #b0b9b8;
+    --text-muted: #879291;
+
+    /* Navbar */
+    --navbar-bg: #252d2d;
+
+    /* Inputs */
+    --input-bg: #242c2c;
+    --input-text: #e1e6e5;
+    --input-placeholder: #758180;
+
+    /* Borders */
+    --border-color: #3d4847;
+
+    /* Tables */
+    --table-header: #242d2c;
+    --table-header-text: #c1cac9;
+    --table-hover: #303a39;
+
+    /* =================================================
+       BRAND
+    ================================================= */
+
+    --accent: #6f9e9a;
+    --accent-hover: #7caaa6;
+    --accent-active: #67938f;
+
+    --accent-soft: #30403e;
+    --accent-soft-hover: #374946;
+
+    /* =================================================
+       STATUS
+    ================================================= */
+
+    --success: #9bb29f;
+    --success-bg: #303e34;
+    --success-border: #465a4a;
+
+    --danger: #cf9a9c;
+    --danger-hover: #dda7a9;
+    --danger-bg: #403334;
+    --danger-border: #5e4749;
+
+    --warning: #c3a37b;
+    --warning-bg: #403a32;
+    --warning-border: #5a5043;
+
+    /* =================================================
+       SHADOWS
+    ================================================= */
+
+    --shadow:
+        0 4px 15px
+        rgba(8, 12, 12, 0.16);
+
+    --shadow-large:
+        0 12px 34px
+        rgba(8, 12, 12, 0.30);
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    min-height: 100vh;
+
+    background: var(--bg-primary);
+
+    color: var(--text-primary);
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    line-height: 1.5;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* =====================================================
+   ROOT / APPLICATION
+===================================================== */
+
+#root,
+.app {
+    min-height: 100vh;
+
+    background: var(--bg-primary);
+
+    color: var(--text-primary);
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-primary);
+}
+
+
+p {
+    color: var(--text-secondary);
+}
+
+
+label {
+    color: var(--text-primary);
+}
+
+
+a {
+    color: inherit;
+}
+
+
+/* =====================================================
+   FORM ELEMENTS
+===================================================== */
+
+input,
+textarea,
+select {
+    background: var(--input-bg);
+
+    color: var(--input-text);
+
+    border:
+        1px solid
+        var(--border-color);
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--input-placeholder);
+}
+
+
+/* =====================================================
+   GLOBAL FOCUS
+===================================================== */
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--accent);
+
+    outline: none;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(71, 122, 120, 0.10);
+}
+
+
+html[data-theme="dark"] input:focus,
+html[data-theme="dark"] textarea:focus,
+html[data-theme="dark"] select:focus {
+    box-shadow:
+        0 0 0 3px
+        rgba(111, 158, 154, 0.10);
+}
+
+
+/* =====================================================
+   CHROME AUTOFILL
+===================================================== */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color:
+        var(--input-text);
+
+    transition:
+        background-color
+        9999s
+        ease-in-out
+        0s;
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+
+    border-radius: 8px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+
+/* =====================================================
+   SELECTION
+===================================================== */
+
+::selection {
+    background: var(--accent-soft);
+
+    color: var(--text-primary);
+}
+
+
+/* =====================================================
+   THEME TRANSITION
+===================================================== */
+
+body,
+.app,
+nav,
+main,
+section,
+article,
+form,
+input,
+textarea,
+select,
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}

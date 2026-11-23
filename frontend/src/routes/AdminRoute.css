@@ -1,0 +1,62 @@
+/* =====================================================
+   ADMIN ROUTE LOADING
+===================================================== */
+
+.admin-route-loading {
+    min-height: calc(100vh - 68px);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    background: var(--bg-primary);
+}
+
+
+/* =====================================================
+   LOADING CIRCLE
+===================================================== */
+
+.admin-route-spinner {
+    width: 36px;
+    height: 36px;
+
+    border: 3px solid var(--border-color);
+
+    border-top-color: var(--accent);
+
+    border-radius: 50%;
+
+    animation: adminRouteSpin 0.75s linear infinite;
+}
+
+
+/* =====================================================
+   LOADING TEXT
+===================================================== */
+
+.admin-route-loading p {
+    margin: 0;
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   SPINNER ANIMATION
+===================================================== */
+
+@keyframes adminRouteSpin {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}

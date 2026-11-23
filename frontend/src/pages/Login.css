@@ -1,0 +1,917 @@
+/* =====================================================
+   LOGIN PAGE
+===================================================== */
+
+.login-page {
+    min-height: calc(100vh - 68px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 48px 20px;
+
+    background: #f3f6f6;
+
+    color: #293333;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.login-container {
+    width: 100%;
+    max-width: 430px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   PAGE INTRO
+===================================================== */
+
+.login-intro {
+    margin-bottom: 24px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   BRAND MARK
+===================================================== */
+
+.login-brand-mark {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 14px;
+
+    background: #477a78;
+
+    color: #f4f8f7;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    box-shadow:
+        0 5px 14px
+        rgba(71, 122, 120, 0.16);
+}
+
+
+/* =====================================================
+   INTRO TEXT
+===================================================== */
+
+.login-intro h1 {
+    margin: 0;
+
+    color: #293333;
+
+    font-size: 23px;
+    font-weight: 650;
+
+    letter-spacing: -0.3px;
+}
+
+
+.login-intro p {
+    max-width: 320px;
+
+    margin: 7px auto 0;
+
+    color: #747e7e;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   LOGIN CARD
+===================================================== */
+
+.login-card {
+    padding: 30px;
+
+    background: #fbfcfc;
+
+    border: 1px solid #dce3e2;
+
+    border-radius: 11px;
+
+    box-shadow:
+        0 8px 26px
+        rgba(42, 55, 55, 0.07);
+}
+
+
+/* =====================================================
+   LOGIN HEADING
+===================================================== */
+
+.login-heading {
+    margin-bottom: 24px;
+}
+
+
+.login-heading h2 {
+    margin: 0 0 5px;
+
+    color: #2d3737;
+
+    font-size: 21px;
+    font-weight: 650;
+}
+
+
+.login-heading p {
+    margin: 0;
+
+    color: #818989;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+}
+
+
+/* =====================================================
+   FORM GROUP
+===================================================== */
+
+.login-form-group {
+    margin-bottom: 18px;
+}
+
+
+.login-form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #465151;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   PASSWORD LABEL ROW
+===================================================== */
+
+.login-label-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 14px;
+}
+
+
+/* =====================================================
+   FORGOT PASSWORD
+===================================================== */
+
+.login-forgot-link {
+    margin-bottom: 7px;
+
+    color: #477a78;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color 0.15s ease;
+}
+
+
+.login-forgot-link:hover {
+    color: #356461;
+
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+.login-form-group > input,
+.login-password-wrapper input {
+    width: 100%;
+    height: 43px;
+
+    padding: 0 13px;
+
+    background: #f8fafa;
+
+    color: #303a3a;
+
+    border: 1px solid #d5dddd;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 13px;
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        background-color 0.15s ease;
+}
+
+
+.login-form-group > input::placeholder,
+.login-password-wrapper input::placeholder {
+    color: #9ba3a3;
+}
+
+
+.login-form-group > input:hover,
+.login-password-wrapper input:hover {
+    border-color: #b9c5c4;
+}
+
+
+.login-form-group > input:focus,
+.login-password-wrapper input:focus {
+    background: #fcfdfd;
+
+    border-color: #5f8f8c;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(71, 122, 120, 0.10);
+}
+
+
+/* =====================================================
+   PASSWORD WRAPPER
+===================================================== */
+
+.login-password-wrapper {
+    position: relative;
+}
+
+
+.login-password-wrapper input {
+    padding-right: 62px;
+}
+
+
+/* =====================================================
+   SHOW / HIDE PASSWORD
+===================================================== */
+
+.login-password-toggle {
+    position: absolute;
+
+    top: 50%;
+    right: 12px;
+
+    transform: translateY(-50%);
+
+    padding: 3px;
+
+    background: transparent;
+
+    color: #5d7472;
+
+    border: none;
+
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: color 0.15s ease;
+}
+
+
+.login-password-toggle:hover {
+    color: #356461;
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+===================================================== */
+
+.login-button {
+    width: 100%;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 5px;
+
+    background: #477a78;
+
+    color: #f5f8f7;
+
+    border: 1px solid #477a78;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 13px
+        rgba(71, 122, 120, 0.14);
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+
+.login-button:hover:not(:disabled) {
+    background: #3d6c69;
+
+    border-color: #3d6c69;
+
+    box-shadow:
+        0 6px 16px
+        rgba(71, 122, 120, 0.19);
+}
+
+
+.login-button:active:not(:disabled) {
+    background: #345e5b;
+
+    border-color: #345e5b;
+}
+
+
+.login-button:disabled {
+    opacity: 0.62;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+}
+
+
+/* =====================================================
+   LOADING SPINNER
+===================================================== */
+
+.login-spinner {
+    width: 14px;
+    height: 14px;
+
+    border:
+        2px solid
+        rgba(245, 248, 247, 0.4);
+
+    border-top-color: #f5f8f7;
+
+    border-radius: 50%;
+
+    animation:
+        loginSpin
+        0.7s linear infinite;
+}
+
+
+@keyframes loginSpin {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.login-message {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    padding: 10px 12px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   SUCCESS MESSAGE
+===================================================== */
+
+.login-message.success {
+    background: #edf4ef;
+
+    color: #55745d;
+
+    border: 1px solid #d1dfd4;
+}
+
+
+/* =====================================================
+   ERROR MESSAGE
+===================================================== */
+
+.login-message.error {
+    background: #f6eeee;
+
+    color: #9b5f62;
+
+    border: 1px solid #e6d1d2;
+}
+
+
+/* =====================================================
+   REGISTER
+===================================================== */
+
+.login-register-text {
+    margin: 22px 0 0;
+
+    text-align: center;
+
+    color: #777f7f;
+
+    font-size: 12px;
+}
+
+
+.login-register-text a {
+    color: #477a78;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.login-register-text a:hover {
+    color: #356461;
+
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   ADMIN LOGIN
+===================================================== */
+
+.login-admin {
+    margin-top: 18px;
+
+    padding-top: 17px;
+
+    text-align: center;
+
+    border-top: 1px solid #e0e5e5;
+}
+
+
+.login-admin a {
+    color: #727d7d;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: color 0.15s ease;
+}
+
+
+.login-admin a:hover {
+    color: #477a78;
+
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   AUTOFILL FIX
+===================================================== */
+
+.login-form-group input:-webkit-autofill,
+.login-form-group input:-webkit-autofill:hover,
+.login-form-group input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #303a3a;
+
+    -webkit-box-shadow:
+        0 0 0 1000px
+        #f8fafa inset;
+
+    transition:
+        background-color 9999s ease-in-out 0s;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+html[data-theme="dark"] .login-page {
+    background: #202727;
+
+    color: #e1e7e6;
+}
+
+
+/* =====================================================
+   DARK BRAND
+===================================================== */
+
+html[data-theme="dark"] .login-brand-mark {
+    background: #6f9e9a;
+
+    color: #202827;
+
+    box-shadow:
+        0 5px 16px
+        rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================================
+   DARK INTRO
+===================================================== */
+
+html[data-theme="dark"] .login-intro h1 {
+    color: #e3e8e7;
+}
+
+
+html[data-theme="dark"] .login-intro p {
+    color: #939e9d;
+}
+
+
+/* =====================================================
+   DARK CARD
+===================================================== */
+
+html[data-theme="dark"] .login-card {
+    background: #293130;
+
+    border-color: #3d4847;
+
+    box-shadow:
+        0 8px 28px
+        rgba(10, 15, 15, 0.25);
+}
+
+
+/* =====================================================
+   DARK HEADING
+===================================================== */
+
+html[data-theme="dark"] .login-heading h2 {
+    color: #e2e7e6;
+}
+
+
+html[data-theme="dark"] .login-heading p {
+    color: #929c9b;
+}
+
+
+/* =====================================================
+   DARK LABEL
+===================================================== */
+
+html[data-theme="dark"] .login-form-group label {
+    color: #c2caca;
+}
+
+
+/* =====================================================
+   DARK LINKS
+===================================================== */
+
+html[data-theme="dark"] .login-forgot-link {
+    color: #83aaa7;
+}
+
+
+html[data-theme="dark"] .login-forgot-link:hover {
+    color: #a1bfbd;
+}
+
+
+/* =====================================================
+   DARK INPUTS
+===================================================== */
+
+html[data-theme="dark"] .login-form-group > input,
+html[data-theme="dark"] .login-password-wrapper input {
+    background: #242c2c;
+
+    color: #e1e6e5;
+
+    border-color: #414d4c;
+}
+
+
+html[data-theme="dark"]
+.login-form-group > input::placeholder,
+
+html[data-theme="dark"]
+.login-password-wrapper input::placeholder {
+    color: #758180;
+}
+
+
+html[data-theme="dark"]
+.login-form-group > input:hover,
+
+html[data-theme="dark"]
+.login-password-wrapper input:hover {
+    border-color: #586765;
+}
+
+
+html[data-theme="dark"]
+.login-form-group > input:focus,
+
+html[data-theme="dark"]
+.login-password-wrapper input:focus {
+    background: #27302f;
+
+    border-color: #6f9e9a;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(111, 158, 154, 0.10);
+}
+
+
+/* =====================================================
+   DARK PASSWORD TOGGLE
+===================================================== */
+
+html[data-theme="dark"] .login-password-toggle {
+    color: #92aaa8;
+}
+
+
+html[data-theme="dark"]
+.login-password-toggle:hover {
+    color: #b0c5c3;
+}
+
+
+/* =====================================================
+   DARK LOGIN BUTTON
+===================================================== */
+
+html[data-theme="dark"] .login-button {
+    background: #6f9e9a;
+
+    color: #202827;
+
+    border-color: #6f9e9a;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.18);
+}
+
+
+html[data-theme="dark"]
+.login-button:hover:not(:disabled) {
+    background: #7caaa6;
+
+    border-color: #7caaa6;
+}
+
+
+html[data-theme="dark"]
+.login-button:active:not(:disabled) {
+    background: #67938f;
+
+    border-color: #67938f;
+}
+
+
+/* =====================================================
+   DARK REGISTER
+===================================================== */
+
+html[data-theme="dark"] .login-register-text {
+    color: #939d9c;
+}
+
+
+html[data-theme="dark"] .login-register-text a {
+    color: #83aaa7;
+}
+
+
+html[data-theme="dark"]
+.login-register-text a:hover {
+    color: #a1bfbd;
+}
+
+
+/* =====================================================
+   DARK ADMIN
+===================================================== */
+
+html[data-theme="dark"] .login-admin {
+    border-color: #3c4746;
+}
+
+
+html[data-theme="dark"] .login-admin a {
+    color: #929d9c;
+}
+
+
+html[data-theme="dark"]
+.login-admin a:hover {
+    color: #83aaa7;
+}
+
+
+/* =====================================================
+   DARK SUCCESS
+===================================================== */
+
+html[data-theme="dark"] .login-message.success {
+    background: #303e34;
+
+    color: #9bb29f;
+
+    border-color: #465a4a;
+}
+
+
+/* =====================================================
+   DARK ERROR
+===================================================== */
+
+html[data-theme="dark"] .login-message.error {
+    background: #403334;
+
+    color: #cf9a9c;
+
+    border-color: #5e4749;
+}
+
+
+/* =====================================================
+   DARK AUTOFILL
+===================================================== */
+
+html[data-theme="dark"]
+.login-form-group input:-webkit-autofill,
+
+html[data-theme="dark"]
+.login-form-group input:-webkit-autofill:hover,
+
+html[data-theme="dark"]
+.login-form-group input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #e1e6e5;
+
+    -webkit-box-shadow:
+        0 0 0 1000px
+        #242c2c inset;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .login-page {
+        padding: 40px 18px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 520px) {
+
+    .login-page {
+        align-items: flex-start;
+
+        padding: 32px 16px;
+    }
+
+
+    .login-container {
+        max-width: 100%;
+    }
+
+
+    .login-intro {
+        margin-bottom: 20px;
+    }
+
+
+    .login-brand-mark {
+        width: 42px;
+        height: 42px;
+
+        margin-bottom: 12px;
+
+        font-size: 17px;
+    }
+
+
+    .login-intro h1 {
+        font-size: 20px;
+    }
+
+
+    .login-intro p {
+        font-size: 12px;
+    }
+
+
+    .login-card {
+        padding: 24px 20px;
+    }
+
+
+    .login-heading {
+        margin-bottom: 21px;
+    }
+
+
+    .login-heading h2 {
+        font-size: 19px;
+    }
+
+
+    .login-form-group {
+        margin-bottom: 16px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .login-page {
+        padding:
+            25px 12px;
+    }
+
+
+    .login-card {
+        padding:
+            21px 16px;
+    }
+
+
+    .login-label-row {
+        gap: 8px;
+    }
+
+}
